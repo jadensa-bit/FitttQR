@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Core theme tokens */
+:root {
+  --background: 255 255 255;
+  --foreground: 24 24 27; /* zinc-900-ish */
+
+  /* Map Tailwind font tokens to your next/font variables */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-poppins);
+}
+
+/* Dark mode tokens (optional, but nice to have ready) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 9 9 11;   /* zinc-950-ish */
+    --foreground: 244 244 245; /* zinc-100-ish */
+  }
+}
+
+/* Keep this minimal so Tailwind classes control the vibe */
+html,
+body {
+  height: 100%;
+}
