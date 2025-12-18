@@ -3,6 +3,9 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
+export async function GET() {
+  return NextResponse.json({ ok: true, route: "/api/checkout is live" });
+}
 function jsonError(message: string, status = 400) {
   return NextResponse.json({ error: message }, { status });
 }
